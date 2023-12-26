@@ -12,3 +12,17 @@ $fa-font-path: "../webfonts" !default;
 h1 {
     color: $text-color;
 }
+
+#headerpage{
+    img{
+        width: 220px;
+    }
+    span{
+        margin-left: 15px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+      }
+
+}

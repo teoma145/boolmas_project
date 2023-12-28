@@ -23,14 +23,14 @@ class ProductsTableSeeder extends Seeder
         $home_decorations = config("db_decoro_casa.decoro_casa");
 
         //ciclo sull'array degli alberi
-        // foreach ($trees as $tree) {
-        //     $new_tree = new Product();
-        //     $new_tree->nome = $tree['nome'];
-        //     $new_tree->prezzo = $tree['prezzo'];
-        //     $new_tree->category = $tree['category'];
-        //     $new_tree->img = $tree['img'];
-        //     $new_tree->save();
-        // }
+        foreach ($trees as $tree) {
+            $new_tree = new Product();
+            $new_tree->nome = $tree['nome'];
+            $new_tree->prezzo = $tree['prezzo'];
+            $new_tree->category = $tree['category'];
+            $new_tree->img = $tree['img'];
+            $new_tree->save();
+        }
         //ciclo sull'array delle luci (non ancora pronto)
         // foreach ($lights as $light) {
         //     $new_light= new Product();
@@ -51,14 +51,14 @@ class ProductsTableSeeder extends Seeder
             $new_ghirlanda->save();
         }
         //ciclo sull'array delle decorazioni degli alberi
-        // foreach ($tree_decorations as $tree_decoration) {
-        //     $new_tree_decoration = new Product();
-        //     $new_tree_decoration->nome = $tree_decoration['nome'];
-        //     $new_tree_decoration->prezzo = $tree_decoration->prezzo;
-        //     $new_tree_decoration->category = $tree_decoration['category'];
-        //     $new_tree_decoration->img = $tree_decoration['img'];
-        //     $new_tree_decoration->save();
-        // }
+        foreach ($tree_decorations as $tree_decoration) {
+            $new_tree_decoration = new Product();
+            $new_tree_decoration->nome = $tree_decoration['nome'];
+            $new_tree_decoration->prezzo = $tree_decoration['prezzo'];
+            $new_tree_decoration->category = $tree_decoration['category'];
+            $new_tree_decoration->img = $tree_decoration['img'];
+            $new_tree_decoration->save();
+        }
         //ciclo sull'array delle decorazione della casa
         foreach ($home_decorations as $home_decoration) {
             $new_home_decoration = new Product();

@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/alberi-di-natale', [ProductController::class, 'alberiDiNatale'])->name('alberi_di_natale.index');
+
+// Route::get('/ghirlande', [ProductController::class, 'ghirlande'])->name('ghirlande.index');
+
+// Route::get('/decoro-albero', [ProductController::class, 'decoroAlbero'])->name('decoro_albero.index');
+
+// Route::get('/luci', [ProductController::class, 'luci'])->name('luci.index');
+
+// Route::get('/decori-per-la-casa', [ProductController::class, 'decoriCasa'])->name('decori_casa.index');

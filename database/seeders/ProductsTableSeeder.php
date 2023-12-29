@@ -17,7 +17,7 @@ class ProductsTableSeeder extends Seeder
     {
         //le variabili che conterranno gli array
         $trees = config("db_tree.tree");
-        //$lights= config("db_light.light");
+        $lights = config("db_light.light");
         $ghirlande = config("db_ghirlande.ghirlande");
         $tree_decorations = config("db_tree_decoration.decoro_albero");
         $home_decorations = config("db_decoro_casa.decoro_casa");
@@ -32,14 +32,14 @@ class ProductsTableSeeder extends Seeder
             $new_tree->save();
         }
         //ciclo sull'array delle luci (non ancora pronto)
-        // foreach ($lights as $light) {
-        //     $new_light= new Product();
-        //     $new_light->nome= $light['nome'];
-        //     $new_light->prezzo= $light['prezzo'];
-        //     $new_light->category= $light['category'];
-        //     $new_light->img= $light['img'];
-        //     $new_light->save();
-        // }
+        foreach ($lights as $light) {
+            $new_light = new Product();
+            $new_light->nome = $light['nome'];
+            $new_light->prezzo = $light['prezzo'];
+            $new_light->category = $light['category'];
+            $new_light->img = $light['img'];
+            $new_light->save();
+        }
         //ciclo sull'array delle ghirlande
         foreach ($ghirlande as $ghirlanda) {
             $new_ghirlanda = new Product();

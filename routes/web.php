@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// percorso per utilizzare ProductController
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+
+Route::get('/', [ProductController::class, 'home'])->name('home');
 
 Route::get('/alberi-di-natale', [ProductController::class, 'alberiDiNatale'])->name('alberi_di_natale.index');
 

@@ -1,7 +1,7 @@
 <div id="headerpage" class="container">
     <div class="d-flex justify-content-between mt-3">
         <div>
-            <img src="{{Vite::asset('resources/img/logo1.png')}}" alt="logo" class="logo1">
+            <a href="{{route('home')}}"><img src="{{Vite::asset('resources/img/logo1.png')}}" alt="logo" class="logo1"></a>
         </div>
         <div class="mt-5">
             <span><a href="">HOME</a></span>
@@ -19,7 +19,7 @@
                 <li><a href="">Ghirlande</a></li>
                 <li><a href="">Luci</a></li>
                 <li><a href="">Decorazioni alberi</a></li>
-                <li><a href="">Alberi di natale</a></li>
+                <li><a href="{{route('alberi_di_natale.index')}}">Alberi di natale</a></li>
             </ul>
         </div>
     </div>

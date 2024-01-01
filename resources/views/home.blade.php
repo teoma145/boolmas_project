@@ -36,6 +36,22 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4 text-danger ">I più popolari</h2>
+        <div class="row gap-5">
+            @foreach ($products->groupBy('category') as $category => $categoryProducts)
+                @foreach ($categoryProducts->take(2) as $product)
+                    <div class="card col-2">
+                        <img src="{{ $product->img }}" alt="{{ $product->nome }}">
+                        <p>{{ $product->nome }} - Prezzo: {{ $product->prezzo }}</p>
+                        <div class="bg-danger p-1 w-50 ">
+                            <a href="" class="text-decoration-none text-black ">Scopri di più</a>
+                        </div>
+                    </div>
+                @endforeach
+            @endforeach
+        </div>
+    </div>
 </main>
 
 @endsection

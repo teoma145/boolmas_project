@@ -14,7 +14,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }}</h5>
                                 <p class="card-text">{{ $product->prezzo }}</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="prodotto/{{ $product->id }}" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>

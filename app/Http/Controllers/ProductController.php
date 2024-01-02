@@ -14,6 +14,13 @@ class ProductController extends Controller
 
         return view("home", compact("products"));
     }
+    public function prodotto($id)
+    {
+        $product = Product::findOrFail($id);
+        // dd($products);
+
+        return view("prodotto.show", compact("product"));
+    }
     public function alberiDiNatale()
     {
         $products = Product::where('category', 'green tree')->get();
@@ -46,7 +53,7 @@ class ProductController extends Controller
     public function luciShow()
     {
         $products = Product::where('category', 'luci')->get();
-       //dd($products);
+        //dd($products);
 
         return view("luci.show", compact("products"));
     }

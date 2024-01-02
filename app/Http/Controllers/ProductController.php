@@ -42,6 +42,14 @@ class ProductController extends Controller
 
         return view("luci.index", compact("products"));
     }
+
+    public function luciShow()
+    {
+        $products = Product::where('category', 'luci')->get();
+       //dd($products);
+
+        return view("luci.show", compact("products"));
+    }
     public function decoriCasa()
     {
         $products = Product::where('category', 'decorazioni casa')->get();

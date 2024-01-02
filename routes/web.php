@@ -27,4 +27,7 @@ Route::get('/decoro-albero', [ProductController::class, 'decoroAlbero'])->name('
 
 Route::get('/luci', [ProductController::class, 'luci'])->name('luci.index');
 
+Route::get('/luci/{product}', [ProductController::class, 'luciShow'])->name('luci.show');
+
+
 Route::get('/decori-per-la-casa', [ProductController::class, 'decoriCasa'])->name('decori_casa.index');

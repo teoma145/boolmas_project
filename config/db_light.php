@@ -15,8 +15,7 @@ return [
         [
             'nome' => '1.500 led bianco caldo uso interno ed esterno, 30 metri',
             'prezzo' => 59, 90,
-            'description' => 'Collana luminosa 1.500 Led, bianco caldo con 8 giochi di luce e funzione memory.
-                Adatte ad un uso interno od esterno, distanza tra ogni led 2 cm, lunghezza totale delle luci 30 metri.',
+            'description' => 'Collana luminosa 1.500 Led, bianco caldo con 8 giochi di luce e funzione memory. Adatte ad un uso interno od esterno, distanza tra ogni led 2 cm, lunghezza totale delle luci 30 metri.',
             'category' => 'luci',
             'img' => 'https://emporiodelnatale.com/wp-content/uploads/1500-led-bianco-caldo.jpg'
 

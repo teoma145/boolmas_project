@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Alberi di natale')
+@section('title', 'Decorazioni casa')
 
 @section('content')
     <main>

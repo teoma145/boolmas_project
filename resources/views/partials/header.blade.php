@@ -15,10 +15,10 @@
     <div class="bg-white">
         <div class="container">
             <ul class="d-flex list-unstyled fs-4 justify-content-between ">
-                <li><a href="">Decorazioni casa</a></li>
-                <li><a href="">Ghirlande</a></li>
+                <li><a href="{{route('decori_casa.index')}}">Decorazioni casa</a></li>
+                <li><a href="{{route('ghirlande.index')}}">Ghirlande</a></li>
                 <li><a href="{{route('luci.index')}}">Luci</a></li>
-                <li><a href="">Decorazioni alberi</a></li>
+                <li><a href="{{route('decoro_albero.index')}}">Decorazioni alberi</a></li>
                 <li><a href="{{route('alberi_di_natale.index')}}">Alberi di natale</a></li>
             </ul>
         </div>

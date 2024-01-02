@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Alberi di natale')
+@section('title', 'Decorazioni Alberi ')
 
 @section('content')
     <main>
@@ -14,11 +14,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }}</h5>
                                 <p class="card-text">{{ $product->prezzo }}</p>
-
-                      
-
-                                <a href="prodotto/{{ $product->id }}" class="btn btn-primary">Go somewhere</a>
-
+                                <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                         </div>
                     </div>

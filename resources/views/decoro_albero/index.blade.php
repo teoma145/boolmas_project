@@ -10,7 +10,7 @@
                 @foreach ($products as $product)
                     <div class="col-4">
                         <div class="card">
-                            <img src="{{ $product->img }}" class="card-img-top" alt="{{ $product->nome }}">
+                            <a href="{{ route('prodotto.show', $product->id) }}"><img src="{{ $product->img }}" class="card-img-top" alt="{{ $product->nome }}"></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }}</h5>
                                 <p class="card-text">{{ $product->prezzo }}</p>

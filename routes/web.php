@@ -19,7 +19,7 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', [ProductController::class, 'home'])->name('home');
 
-Route::get('/prodotto/{id}', [ProductController::class, 'prodotto'])->name('prodotto.show');
+Route::get('/products/{id}', [ProductController::class, 'prodotto'])->name('prodotto.show');
 
 Route::get('/alberi-di-natale', [ProductController::class, 'alberiDiNatale'])->name('alberi_di_natale.index');
 
@@ -29,7 +29,7 @@ Route::get('/decoro-albero', [ProductController::class, 'decoroAlbero'])->name('
 
 Route::get('/luci', [ProductController::class, 'luci'])->name('luci.index');
 
-Route::get('/luci/{product}', [ProductController::class, 'luciShow'])->name('luci.show');
-
-
 Route::get('/decori-per-la-casa', [ProductController::class, 'decoriCasa'])->name('decori_casa.index');
+
+
+// Route::get('/luci/{product}', [ProductController::class, 'luciShow'])->name('luci.show');

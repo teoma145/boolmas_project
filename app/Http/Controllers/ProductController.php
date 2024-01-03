@@ -19,49 +19,54 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         // dd($products);
 
-        return view("prodotto.show", compact("product"));
+        return view("products.show", compact("product"));
     }
     public function alberiDiNatale()
     {
         $products = Product::where('category', 'green tree')->get();
+        $title = 'Alberi di Natale';
         // dd($products);
 
-        return view("alberi_di_natale.index", compact("products"));
+        return view("products.index", compact("products", "title"));
     }
     public function ghirlande()
     {
         $products = Product::where('category', 'ghirlande')->get();
+        $title = 'Ghirlande';
         // dd($products);
 
-        return view("ghirlande.index", compact("products"));
+        return view("products.index", compact("products", "title"));
     }
     public function decoroAlbero()
     {
         $products = Product::where('category', 'decorazioni albero')->get();
+        $title = 'Decoro Albero';
         // dd($products);
 
-        return view("decoro_albero.index", compact("products"));
+        return view("products.index", compact("products", "title"));
     }
     public function luci()
     {
         $products = Product::where('category', 'luci')->get();
         // dd($products);
+        $title = 'Luci';
 
-        return view("luci.index", compact("products"));
-    }
-
-    public function luciShow()
-    {
-        $products = Product::where('category', 'luci')->get();
-        //dd($products);
-
-        return view("luci.show", compact("products"));
+        return view("products.index", compact("products", "title"));
     }
     public function decoriCasa()
     {
         $products = Product::where('category', 'decorazioni casa')->get();
+        $title = 'Decori per la Casa';
         // dd($products);
 
-        return view("decori_casa.index", compact("products"));
+        return view("products.index", compact("products", "title"));
     }
+
+    // public function luciShow()
+    // {
+    //     $products = Product::where('category', 'luci')->get();
+    //     //dd($products);
+
+    //     return view("luci.show", compact("products"));
+    // }
 }

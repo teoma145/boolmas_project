@@ -12,7 +12,7 @@ class ProductController extends Controller
         $products = Product::All();
         // dd($products);
 
-        return view("home", compact("products", "title"));
+        return view("home", compact("products"));
     }
     public function prodotto($id)
     {

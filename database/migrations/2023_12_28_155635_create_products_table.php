@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->string('nome');
             $table->float('prezzo', 8, 2);
             $table->string('category');
+            $table->string('description');
             $table->string('img');
             $table->timestamps();
         });

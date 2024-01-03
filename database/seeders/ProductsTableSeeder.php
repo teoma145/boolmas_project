@@ -28,6 +28,7 @@ class ProductsTableSeeder extends Seeder
             $new_tree->nome = $tree['nome'];
             $new_tree->prezzo = $tree['prezzo'];
             $new_tree->category = $tree['category'];
+            $new_tree->description = $tree['description'];
             $new_tree->img = $tree['img'];
             $new_tree->save();
         }
@@ -37,6 +38,7 @@ class ProductsTableSeeder extends Seeder
             $new_light->nome = $light['nome'];
             $new_light->prezzo = $light['prezzo'];
             $new_light->category = $light['category'];
+            $new_light->description = $light['description'];
             $new_light->img = $light['img'];
             $new_light->save();
         }
@@ -47,6 +49,7 @@ class ProductsTableSeeder extends Seeder
             $new_ghirlanda->nome = $ghirlanda['nome'];
             $new_ghirlanda->prezzo = $ghirlanda['prezzo'];
             $new_ghirlanda->category = $ghirlanda['category'];
+            $new_ghirlanda->description = $ghirlanda['description'];
             $new_ghirlanda->img = $ghirlanda['img'];
             $new_ghirlanda->save();
         }
@@ -56,6 +59,7 @@ class ProductsTableSeeder extends Seeder
             $new_tree_decoration->nome = $tree_decoration['nome'];
             $new_tree_decoration->prezzo = $tree_decoration['prezzo'];
             $new_tree_decoration->category = $tree_decoration['category'];
+            $new_tree_decoration->description = $tree_decoration['description'];
             $new_tree_decoration->img = $tree_decoration['img'];
             $new_tree_decoration->save();
         }
@@ -65,6 +69,7 @@ class ProductsTableSeeder extends Seeder
             $new_home_decoration->nome = $home_decoration['nome'];
             $new_home_decoration->prezzo = $home_decoration['prezzo'];
             $new_home_decoration->category = $home_decoration['category'];
+            $new_home_decoration->description = $home_decoration['description'];
             $new_home_decoration->img = $home_decoration['img'];
             $new_home_decoration->save();
         }

@@ -11,7 +11,7 @@
                 @foreach ($products as $key => $product)
                     <div class="col-4">
                         <div class="card">
-                            <a href="{{ route ('luci.show', $key)}}"><img src="{{ $product->img }}" class="card-img-top" alt="{{ $product->nome }}"></a>
+                            <a href="{{ route('prodotto.show', $product->id) }}"><img src="{{ $product->img }}" class="card-img-top" alt="{{ $product->nome }}"></a>
 
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }} </h5>

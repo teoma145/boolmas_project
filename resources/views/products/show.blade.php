@@ -13,7 +13,7 @@
                             <h3> {{ $product->nome }}</h3>
                             <h4>description : {{ $product->description }}</h4>
                             <div class="mt-3 d-flex justify-content-between ">
-                                <span class="btn btn-primary  p-3">{{ $product->prezzo }}</span>
+                                <span class="btn btn-danger  p-3">{{ $product->prezzo }}</span>
 
 
                             </div>

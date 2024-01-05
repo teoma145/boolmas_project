@@ -17,7 +17,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }} </h5>
                                 <p class="card-text">{{ $product->prezzo }} euro</p>
-                                <a href="{{ route('prodotto.show', $product->id) }}" class="btn btn-primary">Aggiungi al
+                                <a href="{{ route('prodotto.show', $product->id) }}" class="btn btn-danger">Aggiungi al
                                     carrello</a>
                             </div>
                         </div>

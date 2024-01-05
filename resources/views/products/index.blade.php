@@ -26,8 +26,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->nome }} </h5>
                                 <p class="card-text">{{ $product->prezzo }} euro</p>
-                                <a href="{{ route('addproduct.to.cart', $product->id) }}" class="btn btn-primary">Aggiungi al
-                                    carrello</a>
+                                <a href="{{ route('addproduct.to.cart', $product->id) }}" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
 
                         </div>

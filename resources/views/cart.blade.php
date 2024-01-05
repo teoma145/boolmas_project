@@ -4,17 +4,20 @@
 
 @section('content')
     <div class="container">
-        <table id="cart" class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Prodotti</th>
-                    <th>Prezzi</th>
-                    <th>Totale</th>
-                    <th>Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (session('cart'))
+
+        @if (session('cart'))
+
+            <table id="cart" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Prodotti</th>
+                        <th>Prezzi</th>
+                        <th>Totale</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+
                     @foreach (session('cart') as $id => $details)
                         <tr rowId='{{ $id }}'>
                             <td data-th='Product'>
@@ -34,9 +37,21 @@
                             </td>
                         </tr>
                     @endforeach
-                @endif
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        @else
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col p-5">
+                        <h2 class="p-5 text-center">Il carrello è vuoto</h2>
+                    </div>
+                </div>
+            </div>
+
+        @endif
+
+
+
         <a href="{{ route('clear.cart') }}" class="btn btn-danger">Svuota Carrello</a>
     </div>
 

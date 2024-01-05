@@ -61,6 +61,32 @@ class ProductController extends Controller
 
         return view("products.index", compact("products", "title"));
     }
+    public function addProducttoCart($id)
+    {
+        $product = Product::findOrFail($id);
+        $cart = session()->get('cart',[]);
+        if(isset($cart[$id])){
+            $cart[$id]['quantity']++;
+        }else {
+            $cart[$id] = [
+                'quantity' => 1,
+                'name'=> $product->nome,
+                'price'=>$product->prezzo,
+            ];
+        }
+        session()->put('cart',$cart);
+        return redirect()->back()->with('success','Il prodotto è stato aggiunto');
+    }
+    public function ProductCart()
+    {
+        return view ('cart');
+    }
+
+    public function clearCart()
+{
+    session()->forget('cart');
+    return redirect()->back()->with('success', 'Il carrello è stato svuotato');
+}
 
     // public function luciShow()
     // {

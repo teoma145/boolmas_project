@@ -54,7 +54,8 @@
                                         class="card-img-top" alt="{{ $product->nome }}"></a>
                                 <p>{{ $product->nome }} - Prezzo: {{ $product->prezzo }}</p>
                                 <div class="bg-danger p-1 w-50 ">
-                                    <a href="" class="text-decoration-none text-black ">Scopri di più</a>
+                                    <a href="{{ route('prodotto.show', $product->id) }}"
+                                        class="text-decoration-none text-black ">Scopri di più</a>
                                 </div>
                             </div>
 

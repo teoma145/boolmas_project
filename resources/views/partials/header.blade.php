@@ -15,7 +15,7 @@
     <hr>
     <div class="bg-white">
         <div class="container">
-            <ul class="d-flex list-unstyled fs-4 justify-content-between ">
+            <ul class="d-md-flex list-unstyled fs-5 justify-content-between ">
                 <li><a href="{{ route('decori_casa.index') }}">Decorazioni casa</a></li>
                 <li><a href="{{ route('ghirlande.index') }}">Ghirlande</a></li>
                 <li><a href="{{ route('luci.index') }}">Luci</a></li>

@@ -10,10 +10,11 @@
                     <div class="d-flex flex-row">
                         <img src="{{ $product->img }}" alt="{{ $product->nome }}">
                         <div class="d-flex flex-column px-4 text-uppercase opacity-75 ">
-                            <h3> {{ $product->nome }}</h3>
-                            <h4>description : {{ $product->description }}</h4>
+                            <h3 class="mb-5"> {{ $product->nome }}</h3>
+                            <h4 class="mb-1">Descrizione : </h4>
+                            <p class="mb-5">{{ $product->description }}</p>
                             <div class="mt-3 d-flex justify-content-between ">
-                                <span class="btn btn-danger  p-3">{{ $product->prezzo }}</span>
+                                <span class="btn btn-danger  p-3">{{ $product->prezzo }} &euro; </span>
 
 
                             </div>

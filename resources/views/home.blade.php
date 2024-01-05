@@ -45,16 +45,19 @@
         </div>
         <div class="container mt-5 mb-5">
             <h2 class="text-center mb-4 text-danger ">I più popolari</h2>
-            <div class="row gap-5">
+            <div class="row">
                 @foreach ($products->groupBy('category') as $category => $categoryProducts)
                     @foreach ($categoryProducts->take(2) as $product)
-                        <div class="card col-2">
-                            <a href="{{ route('prodotto.show', $product->id) }}"><img src="{{ $product->img }}"
-                                    class="card-img-top" alt="{{ $product->nome }}"></a>
-                            <p>{{ $product->nome }} - Prezzo: {{ $product->prezzo }}</p>
-                            <div class="bg-danger p-1 w-50 ">
-                                <a href="" class="text-decoration-none text-black ">Scopri di più</a>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card ">
+                                <a href="{{ route('prodotto.show', $product->id) }}"><img src="{{ $product->img }}"
+                                        class="card-img-top" alt="{{ $product->nome }}"></a>
+                                <p>{{ $product->nome }} - Prezzo: {{ $product->prezzo }}</p>
+                                <div class="bg-danger p-1 w-50 ">
+                                    <a href="" class="text-decoration-none text-black ">Scopri di più</a>
+                                </div>
                             </div>
+
                         </div>
                     @endforeach
                 @endforeach

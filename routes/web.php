@@ -19,6 +19,10 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', [ProductController::class, 'home'])->name('home');
 
+Route::view('/contact', 'contact')->name('contact');
+
+Route::view('/about', 'about')->name('about');
+
 Route::get('/products/{id}', [ProductController::class, 'prodotto'])->name('prodotto.show');
 
 Route::get('/alberi-di-natale', [ProductController::class, 'alberiDiNatale'])->name('alberi_di_natale.index');

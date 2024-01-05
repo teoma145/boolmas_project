@@ -9,7 +9,7 @@
             <span><a href="{{ route('about') }}">CHI SIAMO</a></span>
             <span><a href="{{ route('contact') }}">CONTATTI</a></span>
             <span><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a></span>
-            <span><a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></span>
+            <span><a href="{{route('shopping.cart')}}"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a><span>{{count((array)session('cart'))}}</span></span>
         </div>
     </div>
     <hr>

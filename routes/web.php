@@ -35,5 +35,12 @@ Route::get('/luci', [ProductController::class, 'luci'])->name('luci.index');
 
 Route::get('/decori-per-la-casa', [ProductController::class, 'decoriCasa'])->name('decori_casa.index');
 
+Route::get('/productscart/{id}', [ProductController::class, 'addProducttoCart'])->name('addproduct.to.cart');
+
+Route::get('/shopping-cart', [ProductController::class, 'ProductCart'])->name('shopping.cart');
+
+Route::get('/clear-cart', [ProductController::class, 'clearCart'])->name('clear.cart');
+
+
 
 // Route::get('/luci/{product}', [ProductController::class, 'luciShow'])->name('luci.show');

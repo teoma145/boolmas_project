@@ -18,6 +18,8 @@
 
 
                             </div>
+                            <a href="{{ route('addproduct.to.cart', $product->id) }}" class="btn btn-danger mt-5">Aggiungi al
+                                carrello</a>
                         </div>
                     </div>
                 </div>

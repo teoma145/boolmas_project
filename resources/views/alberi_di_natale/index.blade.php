@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($products as $product)
-                    <div class="col-4">
+                    <div class="col-4 col-md-6" id="card-box">
                         <div class="card">
                             <a href="{{ route('prodotto.show', $product->id) }}"><img src="{{ $product->img }}" class="card-img-top" alt="{{ $product->nome }}"></a>
                             <div class="card-body">
